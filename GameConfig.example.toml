@@ -1,0 +1,21 @@
+[game_setup]
+roblox_version = '2021'
+
+[server_core.place_file]
+rbxl_uri = 'MyPlace.rbxl'
+enable_saveplace = true
+
+[server_core.metadata]
+title = 'Offline Server'
+description = 'private LAN / friends'
+creator_name = 'Host'
+chat_style = 'ClassicAndBubble'
+
+[server_core]
+allow_unsafe_users = true
+
+# optional: resolve display name from join username
+retrieve_username = '''
+def f(user_id_num, user_code):
+    return user_code
+'''
